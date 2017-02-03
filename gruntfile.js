@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
     watch: {
         scripts: {
-            files: ['src/sass/main.sass', 'src/sass/typography.sass', 'src/sass/variables.sass', 'src/sass/particles.sass'],
+            files: ['src/sass/main.sass', 'src/sass/typography.sass', 'src/sass/variables.sass', 'src/sass/particles.sass', 'src/sass/grid.sass'],
             tasks: ['sass'],
             options: {
                 spawn: false
