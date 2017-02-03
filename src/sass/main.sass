@@ -1,6 +1,7 @@
 @import "variables"
 @import "typography"
 @import "particles"
+@import "grid"
 
 *
   box-sizing: border-box
@@ -8,12 +9,37 @@
 body
   font-family: $font-main
   margin: 0 auto
+section
+  min-height: 100vh
+  text-align: center
+  &.about_me
+    background: orange
+  &.projects
+    margin-top: 100vh
+    background: white
+  &.technologies
+    background: blue
+  &.contact
+    background: green
 
+.section-title
+  position: relative
+  padding: 100px 0
+  h2:after
+    background-color: $color-red
+    content: ""
+    display: block
+    height: 7px
+    margin: 0 auto
+    position: relative
+    width: 100px
+    top: 20px
 
+// HEADER SECTION
 header
   height: 100vh
   width: 100vw
-  background: rgba(0, 0, 0, .6)
+  background: rgba(0, 0, 0, .5)
   display: flex
   justify-content: center
   align-items: center
@@ -35,19 +61,18 @@ header
       color: white
       background: $color-red
 
-section
-  height: 100vh
-  &.about_me
-    background: orange
-  &.projects
-    margin-top: 100vh
-    background: white
-  &.technologies
-    background: blue
-  &.contact
-    background: green
 
 
+// PROJECTS SECTION
+.projects
+  img
+    width: 90%
+    border: 1px solid red
+    margin: 5%
+    //max-height: 200px
+
+
+// FOOTER SECTION
 footer
   height: 500px
   background: gray
@@ -76,3 +101,23 @@ footer
     left: $wrapper_margin
   &.right
     right: $wrapper_margin
+  @media (max-width: 768px)
+    &.top,
+    &.bottom
+      height: $wrapper_width
+      left: 0
+      right: 0
+    &.top
+      top: 0
+    &.bottom
+      bottom: 0
+
+    &.left,
+    &.right
+      width: $wrapper_width
+      top: 0
+      bottom: 0
+    &.left
+      left: 0
+    &.right
+      right: 0
