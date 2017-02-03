@@ -23,6 +23,17 @@ module.exports = function(grunt) {
                 spawn: false
             }
         }
+    },
+
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'src/img',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'built/img/'
+        }]
+      }
     }
 
   });
@@ -30,6 +41,7 @@ module.exports = function(grunt) {
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'watch']);
