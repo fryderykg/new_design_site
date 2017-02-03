@@ -14,12 +14,6 @@ section
   min-height: 100vh
   text-align: center
 
-
-  &.technologies
-    background: blue
-  &.contact
-    background: green
-
 .section-title
   padding: 100px 0
   position: relative
@@ -119,7 +113,27 @@ header
         color: $color-yellow
 
 // TECHNOLOGIES SECTION
+.technologies
+  background: white
+  .items
+    background: $color-blue
+    margin: 0 auto
+    width: 95%
+    .row
+      align-items: center
+      justify-content: center
+    i
+      color: white
+      font-size: 4em
+      margin: 40px
+    img
+      margin: 31px
+      width: 80px
+
 // CONTACT SECTION
+.contact
+  background: $color-green
+
 
 // FOOTER SECTION
 footer

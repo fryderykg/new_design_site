@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,700&subset=latin-ext");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 .bg-red {
   background: #F04E59; }
 
@@ -261,10 +263,6 @@ body {
 section {
   min-height: 100vh;
   text-align: center; }
-  section.technologies {
-    background: blue; }
-  section.contact {
-    background: green; }
 
 .section-title {
   padding: 100px 0;
@@ -358,6 +356,26 @@ header {
     padding: 10px; }
     .about_me .social i:hover {
       color: #FFC63B; }
+
+.technologies {
+  background: white; }
+  .technologies .items {
+    background: #40C2D2;
+    margin: 0 auto;
+    width: 95%; }
+    .technologies .items .row {
+      align-items: center;
+      justify-content: center; }
+    .technologies .items i {
+      color: white;
+      font-size: 4em;
+      margin: 40px; }
+    .technologies .items img {
+      margin: 31px;
+      width: 80px; }
+
+.contact {
+  background: #77C383; }
 
 footer {
   background: gray;
