@@ -1,0 +1,78 @@
+@import "variables"
+@import "typography"
+@import "particles"
+
+*
+  box-sizing: border-box
+
+body
+  font-family: $font-main
+  margin: 0 auto
+
+
+header
+  height: 100vh
+  width: 100vw
+  background: rgba(0, 0, 0, .6)
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  position: fixed
+  top: 0
+  z-index: -1
+  .btn
+    background: transparent
+    border: 2px solid rgba(255, 255, 255, .5)
+    color: $color-red
+    padding: 20px 30px
+    font-size: 1em
+    text-decoration: none
+    transition: .3s all ease
+    margin-top: 100px
+    &:hover
+      border-color: $color-red
+      color: white
+      background: $color-red
+
+section
+  height: 100vh
+  &.about_me
+    background: orange
+  &.projects
+    margin-top: 100vh
+    background: white
+  &.technologies
+    background: blue
+  &.contact
+    background: green
+
+
+footer
+  height: 500px
+  background: gray
+
+
+.site-wrapper
+  background: $color-red
+  position: fixed
+  z-index: 999 // to always be on top
+  &.top,
+  &.bottom
+    height: $wrapper_width
+    left: $wrapper_margin
+    right: $wrapper_margin
+  &.top
+    top: $wrapper_margin
+  &.bottom
+    bottom: $wrapper_margin
+
+  &.left,
+  &.right
+    width: $wrapper_width
+    top: $wrapper_margin
+    bottom: $wrapper_margin
+  &.left
+    left: $wrapper_margin
+  &.right
+    right: $wrapper_margin

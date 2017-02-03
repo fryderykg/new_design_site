@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,700&subset=latin-ext");
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  color: black; }
+
+p {
+  font-family: "Lato", sans-serif; }
+
+header h1 {
+  color: white;
+  font-size: calc(3em + 3vw); }
+
+.subtitle {
+  color: lightgrey;
+  font-size: 2em;
+  font-weight: 300; }
+
+.text-red {
+  color: #F04E59; }
+
+canvas {
+  display: block;
+  vertical-align: bottom; }
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  /*background-image: url("")*/
+  z-index: -2;
+  top: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0 auto; }
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: -1; }
+  header .btn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #F04E59;
+    padding: 20px 30px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: .3s all ease;
+    margin-top: 100px; }
+    header .btn:hover {
+      border-color: #F04E59;
+      color: white;
+      background: #F04E59; }
+
+section {
+  height: 100vh; }
+  section.about_me {
+    background: orange; }
+  section.projects {
+    margin-top: 100vh;
+    background: white; }
+  section.technologies {
+    background: blue; }
+  section.contact {
+    background: green; }
+
+footer {
+  height: 500px;
+  background: gray; }
+
+.site-wrapper {
+  background: #F04E59;
+  position: fixed;
+  z-index: 999; }
+  .site-wrapper.top, .site-wrapper.bottom {
+    height: 7px;
+    left: 25px;
+    right: 25px; }
+  .site-wrapper.top {
+    top: 25px; }
+  .site-wrapper.bottom {
+    bottom: 25px; }
+  .site-wrapper.left, .site-wrapper.right {
+    width: 7px;
+    top: 25px;
+    bottom: 25px; }
+  .site-wrapper.left {
+    left: 25px; }
+  .site-wrapper.right {
+    right: 25px; }
+
+/*# sourceMappingURL=main.css.map */
