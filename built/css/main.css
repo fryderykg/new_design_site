@@ -232,7 +232,7 @@ h2 {
       font-size: 2.5em; } }
   @media (max-width: 576px) {
     h2 {
-      font-size: 1.5em; } }
+      font-size: 1.3em; } }
 
 p {
   font-family: "Lato", sans-serif;
@@ -338,30 +338,31 @@ p {
   transition: 0.5s;
   width: 0;
   z-index: 10; }
+  .sidenav a {
+    color: #F1F1F1;
+    font-size: 25px;
+    padding: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s; }
+    .sidenav a:hover, .sidenav a .offcanvas a:focus {
+      color: #FFC63B; }
+    @media (max-width: 576px) {
+      .sidenav a {
+        font-size: 18px; } }
+  .sidenav .closebtn {
+    color: #F1F1F1;
+    font-size: 3em;
+    left: 74px;
+    padding: 0 !important;
+    position: absolute;
+    top: 60px; }
+    @media (max-width: 576px) {
+      .sidenav .closebtn {
+        left: 23px;
+        top: 10px; } }
 
-.sidenav a {
-  color: #F1F1F1;
-  font-size: 25px;
-  padding: 32px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.3s; }
-
-.sidenav a:hover, .offcanvas a:focus {
-  color: #FFC63B; }
-
-.sidenav .closebtn {
-  font-size: 3em;
-  left: 65px;
-  padding: 0 !important;
-  position: absolute;
-  top: 55px; }
-  @media (max-width: 576px) {
-    .sidenav .closebtn {
-      left: 25px;
-      top: 10px; } }
-
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 576px) {
   .sidenav {
     padding-top: 15px; }
   .sidenav a {
