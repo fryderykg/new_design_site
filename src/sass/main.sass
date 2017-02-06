@@ -106,6 +106,21 @@ header
 // TECHNOLOGIES SECTION
 .technologies
   background: white
+
+  .service
+    margin: 50px 15px
+    @media (max-width: 768px)
+      margin: 15px
+    i
+      font-size: 3em
+      margin: 20px
+    h3
+      color: #000
+    p
+      max-width: 400px
+      margin: 0 auto
+
+
   .items
     background: $color-blue
     margin: 0 auto
@@ -148,24 +163,26 @@ header
     .btn
       @include btn-style($color-yellow)
 
-.success
-  @include contact-message
-  background-color: #dff0d8
-  color: #468847
+    // To hide labels on screen and make it "visible" for screen readers
+    .hidden
+      height: 1px
+      left: -10000px
+      overflow: hidden
+      position: absolute
+      top: auto
+      width: 1px
 
-.error
-  @include contact-message
-  background-color: #f2dede
-  color: #b94a48
+  .success
+    @include contact-message
+    background-color: #dff0d8
+    color: #468847
 
-  // To hide labels on screen and make it "visible" for screen readers
-  .hidden
-    height: 1px
-    left: -10000px
-    overflow: hidden
-    position: absolute
-    top: auto
-    width: 1px
+  .error
+    @include contact-message
+    background-color: #f2dede
+    color: #b94a48
+
+
 
 // COLOR SQUARE AROUND PAGE
 .site-wrapper
