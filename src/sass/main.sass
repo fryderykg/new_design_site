@@ -21,7 +21,6 @@ section
   @media (max-width: 768px)
     padding: 30px 0
   h2:after
-    background-color: $color-red
     content: ""
     display: block
     height: 7px
@@ -42,8 +41,16 @@ header
   top: 0
   width: 100vw
   z-index: -1
+  h1
+    color: white
+    font-size: calc(3em + 3vw)
+    @media (max-width: 768px)
+      font-size: 2.3em
+  .subtitle
+    font-weight: 300
+
   .btn
-    @include btn-style($color-red)
+    @include btn-style($color-yellow)
     margin-top: 100px
     padding: 20px 30px
     text-decoration: none
@@ -51,6 +58,8 @@ header
 // PROJECTS SECTION
 .projects
   background: white
+  h2:after
+    background-color: $color-red
   .image
     margin: 5%
     overflow: hidden
@@ -88,10 +97,11 @@ header
 // ABOUT ME SECTION
 .about_me
   background: $color-light-gray
-  h3
+  h2:after
+    background-color: $color-green
+  h2
     color: black
     font-family: $font-decoration
-    font-size: 1.8em
     padding-top: 50px
   .social
     i
@@ -106,6 +116,8 @@ header
 // TECHNOLOGIES SECTION
 .technologies
   background: white
+  h2:after
+    background-color: $color-blue
 
   .service
     margin: 50px 15px
@@ -119,7 +131,6 @@ header
     p
       max-width: 400px
       margin: 0 auto
-
 
   .items
     background: $color-blue
@@ -141,6 +152,8 @@ header
 // CONTACT SECTION
 .contact
   background: $color-green
+  h2:after
+    background-color: $color-yellow
   form
     font-family: $font-main
     margin: 100px auto
@@ -182,12 +195,10 @@ header
     background-color: #f2dede
     color: #b94a48
 
-
-
 // COLOR SQUARE AROUND PAGE
 .site-wrapper
   position: fixed
-  background: $color-red
+  background: $color-yellow
   z-index: 999 // to always be on top
   &.top,
   &.bottom
