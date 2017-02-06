@@ -27,7 +27,7 @@
           <a href="http://web-dev.waw.pl/pages/fitness/" target="_blank">
             <div class="image">
               <img src="built/img/fitness.jpg" alt="fitness webpage">
-              <div class="overlay bg-red">
+              <div class="overlay bg-yellow">
                 <h3>FITNESS CLUB</h3>
                 <p>HTML5, SCSS, jQuery, BOOTSTRAP, RWD</p>
               </div>
@@ -51,7 +51,7 @@
           <a href="http://web-dev.waw.pl/pages/photographer/" target="_blank">
             <div class="image">
               <img src="built/img/photographer_page_screen.jpg" alt="photographer webpage">
-              <div class="overlay bg-yellow">
+              <div class="overlay bg-purple">
                 <h3>PHOTOGRAPHER PAGE</h3>
                 <p>HTML5, CSS3, jQuery, RWD</p>
               </div>
@@ -87,7 +87,7 @@
           <a href="http://web-dev.waw.pl/pages/ad_it/" target="_blank">
             <div class="image">
               <img src="built/img/creative_agency_screen.jpg" alt="creative agency webpage">
-              <div class="overlay bg-purple">
+              <div class="overlay bg-pink">
                 <h3>CREATIVE AGENCY</h3>
                 <p>HTML5, CSS3, JavaScript,RWD</p>
               </div>
@@ -99,7 +99,7 @@
           <a href="http://web-dev.waw.pl/pages/travel/" target="_blank">
             <div class="image">
               <img src="built/img/travel.jpg" alt="Travel agency webpage">
-              <div class="overlay bg-pink">
+              <div class="overlay bg-red">
                 <h3>TRAVEL AGENCY</h3>
                 <p>HTML5, CSS3</p>
               </div>
@@ -159,13 +159,28 @@
           <div class="col-sm-6 col-md-4 col-lg-2"><img src="built/img/django.png" alt=""></div>
           <div class="col-sm-6 col-md-4 col-lg-2"><i class="fa fa-github"></i></div>
           <div class="col-sm-6 col-md-4 col-lg-2"><img src="built/img/ajax.png" alt=""></div>
-
-
         </div>
       </div>
     </div>
   </section>
-  <section class="contact"></section>
+  <section class="contact">
+    <div class="container">
+      <div class="section-title">
+        <p class="subtitle">Interested?</p>
+        <h2>CONTACT ME</h2>
+        <form action="mailer.php" method="POST" id="ajax-contact">
+          <fieldset>
+            <input type="text" name="name" placeholder="Name" id="name" required>
+            <input type="email" name="email" placeholder="Email address" id="email" required>
+            <textarea name="message" id="message" rows="7" placeholder="Your message" required></textarea>
+            <input type="submit" id="submit" value="Send Message" class="button">
+            <div id="form-messages"></div>
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+  </section>
   <footer></footer>
 
   <div class="site-wrapper left"></div>
@@ -175,6 +190,6 @@
 
   <script src="src/js/particles.js"></script>
   <script src="src/js/particles_config.js"></script>
-  <script src="src/js/script.js"></script>
+  <script src="built/js/output.js"></script>
 </body>
 </html>
