@@ -34,6 +34,15 @@ module.exports = function(grunt) {
           dest: 'built/img/'
         }]
       }
+    },
+    concat: {
+      options: {
+        separator: '\n'
+      },
+      dist: {
+        src: ['src/js/script.js', 'src/js/send_mail.js'],
+        dest: 'built/js/output.js'
+      }
     }
 
   });
@@ -42,6 +51,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'watch']);
