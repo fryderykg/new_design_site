@@ -352,11 +352,14 @@ p {
         font-size: 18px; } }
   .sidenav .closebtn {
     color: #F1F1F1;
+    cursor: pointer;
     font-size: 3em;
     left: 74px;
     padding: 0 !important;
     position: absolute;
     top: 60px; }
+    .sidenav .closebtn:hover {
+      color: #FFC63B; }
     @media (max-width: 576px) {
       .sidenav .closebtn {
         left: 23px;
