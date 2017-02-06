@@ -148,6 +148,16 @@ header
     .btn
       @include btn-style($color-yellow)
 
+.success
+  @include contact-message
+  background-color: #dff0d8
+  color: #468847
+
+.error
+  @include contact-message
+  background-color: #f2dede
+  color: #b94a48
+
   // To hide labels on screen and make it "visible" for screen readers
   .hidden
     height: 1px
