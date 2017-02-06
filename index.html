@@ -8,7 +8,7 @@
   <title>Document</title>
 </head>
 <body>
-  <!-- particles.js container -->
+   <!--particles.js container-->
   <div id="particles-js"></div>
   <header>
       <p class="subtitle">Front-End <span class="text-red text-bold">Developer</span></p>
@@ -170,10 +170,13 @@
         <h2>CONTACT ME</h2>
         <form action="mailer.php" method="POST" id="ajax-contact">
           <fieldset>
+            <label for="name" class="hidden">Name:</label>
             <input type="text" name="name" placeholder="Name" id="name" required>
+            <label for="email" class="hidden">Email:</label>
             <input type="email" name="email" placeholder="Email address" id="email" required>
+            <label for="message" class="hidden">Message</label>
             <textarea name="message" id="message" rows="7" placeholder="Your message" required></textarea>
-            <input type="submit" id="submit" value="Send Message" class="button">
+            <input type="submit" id="submit" value="SEND MESSAGE" class="btn">
             <div id="form-messages"></div>
           </fieldset>
         </form>
@@ -181,13 +184,15 @@
       </div>
     </div>
   </section>
-  <footer></footer>
+  <!--<footer></footer>-->
 
   <div class="site-wrapper left"></div>
   <div class="site-wrapper right"></div>
   <div class="site-wrapper top"></div>
   <div class="site-wrapper bottom"></div>
-
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
   <script src="src/js/particles.js"></script>
   <script src="src/js/particles_config.js"></script>
   <script src="built/js/output.js"></script>
