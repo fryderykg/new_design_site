@@ -288,12 +288,108 @@ p {
 .text-bold {
   font-weight: bold; }
 
+.bg-red {
+  background: #F04E59; }
+
+.bg-blue {
+  background: #40C2D2; }
+
+.bg-green {
+  background: #77C383; }
+
+.bg-yellow {
+  background: #FFC63B; }
+
+.bg-purple {
+  background: purple; }
+
+.bg-brown {
+  background: saddlebrown; }
+
+.bg-pink {
+  background: deeppink; }
+
+.bg-orange {
+  background: orangered; }
+
+.text-red {
+  color: #F04E59; }
+
+.text-yellow {
+  color: #FFC63B; }
+
+.text-green {
+  color: #77C383; }
+
+.text-bold {
+  font-weight: bold; }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.sidenav a {
+  padding: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #F1F1F1;
+  transition: 0.3s; }
+
+.sidenav a:hover, .offcanvas a:focus {
+  color: #FFC63B; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  padding: 0 !important;
+  font-size: 3em; }
+  @media (max-width: 576px) {
+    .sidenav .closebtn {
+      top: 10px;
+      left: 25px; } }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+.hamburger {
+  position: fixed;
+  top: 75px;
+  left: 75px;
+  z-index: 9; }
+  @media (max-width: 576px) {
+    .hamburger {
+      top: 25px;
+      left: 25px; } }
+  .hamburger i {
+    color: #FFC63B;
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 1px 0 0 #FFC63B, -1px 0 0 #FFC63B, 0 1px 0 #FFC63B, 0 -1px 0 #FFC63B; }
+    .hamburger i:hover {
+      color: #FFF; }
+
 * {
   box-sizing: border-box; }
 
 body {
   font-family: "Lato", sans-serif;
-  margin: 100vh auto 0; }
+  margin: 100vh 0 0; }
 
 section {
   min-height: 100vh;
@@ -394,7 +490,7 @@ header {
   background: #F1F1F1; }
   .about_me h2:after {
     background-color: #77C383; }
-  .about_me h2 {
+  .about_me h3 {
     color: black;
     font-family: "Montserrat", sans-serif;
     padding-top: 50px; }

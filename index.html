@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="built/css/main.css">
   <title>Document</title>
@@ -10,12 +10,26 @@
 <body>
    <!--particles.js container-->
   <div id="particles-js"></div>
+
+   <!-- NAVBAR -->
+   <div id="mySidenav" class="sidenav">
+     <a href="#" class="closebtn" id="closeBtn">&times;</a>
+     <a href="#top" class="menu">Home</a>
+     <a href="#projects" class="menu">Projects</a>
+     <a href="#aboutMe" class="menu">About me</a>
+     <a href="#technologies" class="menu">Technologies</a>
+     <a href="#contact" class="menu">Contact</a>
+   </div>
+   <span class="hamburger" id="openBtn"><i class="fa fa-bars"></i></span>
+   <!-- END NAVBAR -->
+
   <header>
-      <p class="subtitle">Front-End <span class="text-yellow text-bold">Developer</span></p>
+   <p class="subtitle">Front-End <span class="text-yellow text-bold">Developer</span></p>
       <h1>WEB CODING</h1>
-      <a href="#projects" class="btn">View My Work</a>
+      <a href="#projects" class="btn menu">View My Work</a>
   </header>
 
+<!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
       <div class="section-title">
@@ -121,6 +135,8 @@
       </div>
     </div>
   </section>
+
+  <!-- ABOUT ME-->
   <section class="about_me" id="aboutMe">
     <div class="container">
       <div class="section-title">
@@ -131,15 +147,16 @@
       <p>I spent several last months on learning coding. Last three months on intensive Front-End bootcamp.</p>
       <p>I am looking for my first job to start my career and to learn more from experienced colleagues.</p>
       <p>If you want to learn more about me and my skills, please browse this portfolio website or contact me</p>
-      <h2>YOU CAN FIND ME AS WELL ON:</h2>
+      <h3>YOU CAN FIND ME ON:</h3>
       <div class="social">
         <a href="https://github.com/fryderykg" target="_blank"><i class="fa fa-github"></i></a>
         <a href="https://pl.linkedin.com/in/fryderyk-grodzinski" target="_blank"><i class="fa fa-linkedin"></i></a>
       </div>
     </div>
-
   </section>
-  <section class="technologies">
+
+  <!-- TECHNOLOGIES -->
+  <section class="technologies" id="technologies">
     <div class="container">
       <div class="section-title">
         <p class="subtitle">What I know &</p>
@@ -184,10 +201,9 @@
             </div>
           </div>
           <div class="col-xs-0 col-sm-3 col-md-3"></div>
-
-
         </div>
       </div>
+      <!-- Technologies icons -->
       <div class="items">
         <div class="row">
           <div class="col-sm-6 col-md-4 col-lg-2"><i class="fa fa-html5"></i></div>
@@ -206,7 +222,8 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
     <div class="container">
       <div class="section-title">
         <p class="subtitle">Interested?</p>
@@ -223,16 +240,17 @@
             <div id="form-messages"></div>
           </fieldset>
         </form>
-
       </div>
     </div>
   </section>
-  <!--<footer></footer>-->
 
+  <!-- COLOR RECTANGLE AROUND THE PAGE -->
   <div class="site-wrapper left"></div>
   <div class="site-wrapper right"></div>
   <div class="site-wrapper top"></div>
   <div class="site-wrapper bottom"></div>
+
+  <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
           crossorigin="anonymous"></script>

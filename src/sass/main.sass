@@ -2,18 +2,23 @@
 @import "particles"
 @import "typography"
 @import "variables"
+@import "navbar"
 
 *
   box-sizing: border-box
 
 body
   font-family: $font-main
-  margin: 100vh auto 0
+  margin: 100vh 0 0
+
 
 section
   min-height: 100vh
   text-align: center
   z-index: 2
+
+//#top
+//  z-index: -110 !important
 
 .section-title
   padding: 100px 0
@@ -99,7 +104,7 @@ header
   background: $color-light-gray
   h2:after
     background-color: $color-green
-  h2
+  h3
     color: black
     font-family: $font-decoration
     padding-top: 50px
