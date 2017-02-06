@@ -1,43 +1,40 @@
 @import "variables"
 
 .sidenav
-  height: 100%
-  width: 0
-  position: fixed
-  z-index: 10
-  top: 0
-  left: 0
   background-color: rgba(0, 0, 0, .9)
-  overflow-x: hidden
-  transition: 0.5s
-  //padding-top: 60px
-  text-align: center
   display: flex
   flex-direction: column
-  //align-items: center
+  height: 100%
   justify-content: center
+  left: 0
+  overflow-x: hidden
+  position: fixed
+  text-align: center
+  top: 0
+  transition: 0.5s
+  width: 0
+  z-index: 10
 
 .sidenav a
+  color:  $color-light-gray
+  font-size: 25px
   padding: 32px
   text-decoration: none
   text-transform: uppercase
-  font-size: 25px
-  color:  $color-light-gray
   transition: 0.3s
 
 .sidenav a:hover, .offcanvas a:focus
   color: $color-yellow
 
 .sidenav .closebtn
-  position: absolute
-  top: 55px
+  font-size: 3em
   left: 65px
   padding: 0 !important
-  font-size: 3em
+  position: absolute
+  top: 55px
   @media (max-width: 576px)
-    top: 10px
     left: 25px
-
+    top: 10px
 
 @media screen and (max-height: 450px)
   .sidenav
@@ -46,9 +43,9 @@
     font-size: 18px
 
 .hamburger
+  left: 75px
   position: fixed
   top: 75px
-  left: 75px
   z-index: 9
   @media (max-width: 576px)
     top: 25px
@@ -56,8 +53,8 @@
 
   i
     color: $color-yellow
-    font-size: 30px
     cursor: pointer
+    font-size: 30px
     text-shadow: 1px 0 0 $color-yellow, -1px 0 0 $color-yellow, 0 1px 0 $color-yellow, 0 -1px 0 $color-yellow
     &:hover
       color: #FFF

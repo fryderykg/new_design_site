@@ -1,6 +1,3 @@
-/**
- * Created by frycek on 03.02.17.
- */
 /* ---- particles.js config ---- */
 
 particlesJS("particles-js", {

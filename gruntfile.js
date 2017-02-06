@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         separator: '\n'
       },
       dist: {
-        src: ['src/js/script.js', 'src/js/send_mail.js'],
+        src: ['src/js/script.js', 'src/js/send_mail.js', 'src/js/particles_config.js'],
         dest: 'built/js/output.js'
       }
     }
