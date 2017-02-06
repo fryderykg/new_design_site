@@ -14,33 +14,28 @@
   transition: 0.5s
   width: 0
   z-index: 10
+  a
+    color:  $color-light-gray
+    font-size: 25px
+    padding: 32px
+    text-decoration: none
+    text-transform: uppercase
+    transition: 0.3s
+    &:hover, .offcanvas a:focus
+      color: $color-yellow
+    @media (max-width: 576px)
+      font-size: 18px
 
-.sidenav a
-  color:  $color-light-gray
-  font-size: 25px
-  padding: 32px
-  text-decoration: none
-  text-transform: uppercase
-  transition: 0.3s
-
-.sidenav a:hover, .offcanvas a:focus
-  color: $color-yellow
-
-.sidenav .closebtn
-  font-size: 3em
-  left: 65px
-  padding: 0 !important
-  position: absolute
-  top: 55px
-  @media (max-width: 576px)
-    left: 25px
-    top: 10px
-
-@media screen and (max-height: 450px)
-  .sidenav
-    padding-top: 15px
-  .sidenav a
-    font-size: 18px
+  .closebtn
+    color: $color-light-gray
+    font-size: 3em
+    left: 74px
+    padding: 0 !important
+    position: absolute
+    top: 60px
+    @media (max-width: 576px)
+      left: 23px
+      top: 10px
 
 .hamburger
   left: 75px
@@ -50,7 +45,6 @@
   @media (max-width: 576px)
     top: 25px
     left: 25px
-
   i
     color: $color-yellow
     cursor: pointer

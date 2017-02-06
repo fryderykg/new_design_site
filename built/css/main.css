@@ -362,12 +362,6 @@ p {
         left: 23px;
         top: 10px; } }
 
-@media screen and (max-height: 576px) {
-  .sidenav {
-    padding-top: 15px; }
-  .sidenav a {
-    font-size: 18px; } }
-
 .hamburger {
   left: 75px;
   position: fixed;
