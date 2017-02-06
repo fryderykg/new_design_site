@@ -26,3 +26,19 @@ $color-light-gray: #F1F1F1
 .bg-orange
   background: orangered
 
+// MIXINS
+
+@mixin btn-style($color)
+  background: transparent
+  border: 2px solid rgba(255, 255, 255, .7)
+  color: $color
+  cursor: pointer
+  font-size: 1.2em
+  transition: .3s ease
+  transition-property: background, color
+  &:hover
+    background: $color
+    border-color: $color
+    color: white
+  &:focus, &:active
+    outline-color: $color
