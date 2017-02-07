@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Nova+Mono|Roboto+Mono:300,400");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 .bg-red {
@@ -216,7 +216,7 @@ canvas {
   font-weight: bold; }
 
 h1, h2, h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nova Mono", sans-serif;
   margin: 0; }
 
 h1, h2 {
@@ -235,7 +235,7 @@ h2 {
       font-size: 1.3em; } }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-size: 1.2em;
   line-height: 1.5em;
   margin: 0;
@@ -386,7 +386,7 @@ p {
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   margin: 100vh 0 0; }
 
 section {
@@ -490,7 +490,7 @@ header {
     background-color: #77C383; }
   .about_me h3 {
     color: black;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nova Mono", sans-serif;
     padding-top: 50px; }
   .about_me .social i {
     color: black;
@@ -539,7 +539,7 @@ header {
   .contact h2:after {
     background-color: #FFC63B; }
   .contact form {
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     margin: 100px auto;
     max-width: 600px;
     padding: 0; }
@@ -550,7 +550,7 @@ header {
       border: 0; }
     .contact form input, .contact form textarea {
       border: 0;
-      font-family: "Lato", sans-serif;
+      font-family: "Roboto Mono", sans-serif;
       margin: 5px 0;
       outline-color: #FFC63B;
       padding: 10px;
