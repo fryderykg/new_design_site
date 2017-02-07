@@ -506,7 +506,8 @@ header {
       color: #FFC63B; }
 
 .technologies {
-  background: white; }
+  background: white;
+  padding-bottom: 75px; }
   .technologies h2:after {
     background-color: #40C2D2; }
   .technologies .service {
@@ -526,7 +527,7 @@ header {
     background: #40C2D2;
     margin: 0 auto;
     padding: 50px 0;
-    width: 95%; }
+    width: 85%; }
     .technologies .items .row {
       align-items: center;
       justify-content: center; }
