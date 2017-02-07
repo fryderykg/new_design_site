@@ -41,7 +41,8 @@ module.exports = function(grunt) {
         separator: '\n'
       },
       dist: {
-        src: ['src/js/script.js', 'src/js/send_mail.js', 'src/js/particles_config.js', 'src/js/waypoints_config.js'],
+        src: ['src/js/particles.min.js', 'src/js/jquery.waypoints.min.js', 'src/js/aos.js', 'src/js/script.js',
+              'src/js/send_mail.js', 'src/js/particles_config.js', 'src/js/waypoints_config.js'],
         dest: 'built/js/output.js'
       }
     }

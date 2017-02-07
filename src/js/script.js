@@ -43,4 +43,13 @@ $(document).ready(function(){
   // Event Listeners
   $('#openBtn').on('click', openNav);
   $('#closeBtn').on('click', closeNav);
+
+  // ANIMATION OF SCROLL
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-sine',
+    delay: 100
+  });
 });
+
