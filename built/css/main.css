@@ -597,6 +597,7 @@ header {
 .site-wrapper {
   position: fixed;
   background: #FFC63B;
+  transition: 1s background ease;
   z-index: 999; }
   .site-wrapper.top, .site-wrapper.bottom {
     height: 7px;

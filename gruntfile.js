@@ -16,8 +16,9 @@ module.exports = function(grunt) {
     },
 
     watch: {
-        scripts: {
-            files: ['src/sass/main.sass', 'src/sass/typography.sass', 'src/sass/variables.sass', 'src/sass/particles.sass', 'src/sass/grid.sass', 'src/sass/navbar.sass'],
+        sass: {
+            files: ['src/sass/main.sass', 'src/sass/typography.sass', 'src/sass/variables.sass',
+                    'src/sass/particles.sass', 'src/sass/grid.sass', 'src/sass/navbar.sass'],
             tasks: ['sass'],
             options: {
                 spawn: false
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
         separator: '\n'
       },
       dist: {
-        src: ['src/js/script.js', 'src/js/send_mail.js', 'src/js/particles_config.js'],
+        src: ['src/js/script.js', 'src/js/send_mail.js', 'src/js/particles_config.js', 'src/js/waypoints_config.js'],
         dest: 'built/js/output.js'
       }
     }
