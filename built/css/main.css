@@ -382,12 +382,16 @@ p {
     .hamburger i:hover {
       transform: rotate(90deg) scale(1.2); }
 
+html {
+  overflow-x: hidden; }
+
 * {
   box-sizing: border-box; }
 
 body {
   font-family: "Roboto Mono", sans-serif;
-  margin: 100vh 0 0; }
+  margin: 100vh 0 0;
+  overflow-x: hidden; }
 
 section {
   min-height: 100vh;
