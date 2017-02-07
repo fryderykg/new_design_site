@@ -8,10 +8,23 @@ $(document).ready(function() {
     colorAboutMe = '#77C383',
     colorTechnologies = '#40C2D2',
     colorContactMe = '#FFC63B',
-    siteWrapper = $('.site-wrapper');
+    siteWrapper = $('.site-wrapper'),
+    hamburger = $('#hamburgerIcon');
+
 
   // WAYPOINTS
-  var projectsWaypoint = new Waypoint({
+  var hamburgerWaypoint = new Waypoint({
+    element: document.getElementById('projects'),
+    handler: function (direction) {
+      if (direction === 'down') {
+        hamburger.css('color', '#000')
+      } else {
+        hamburger.css('color', '#FFF')
+      }
+    },
+    offset: '50px'
+  }),
+    projectsWaypoint = new Waypoint({
       element: document.getElementById('projects'),
       handler: function (direction) {
         if (direction === 'down') {

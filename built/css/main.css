@@ -375,12 +375,12 @@ p {
       top: 25px;
       left: 25px; } }
   .hamburger i {
-    color: #FFC63B;
+    color: #FFFFFF;
     cursor: pointer;
     font-size: 30px;
-    text-shadow: 1px 0 0 #FFC63B, -1px 0 0 #FFC63B, 0 1px 0 #FFC63B, 0 -1px 0 #FFC63B; }
+    transition: .5s transform ease; }
     .hamburger i:hover {
-      color: #FFF; }
+      transform: rotate(90deg) scale(1.2); }
 
 * {
   box-sizing: border-box; }
