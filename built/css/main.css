@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nova+Mono|Roboto+Mono:300,400");
+@import url("https://fonts.googleapis.com/css?family=Nova+Mono|Montserrat|Lato:300,400");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 .bg-red {
@@ -216,7 +216,7 @@ canvas {
   font-weight: bold; }
 
 h1, h2, h3 {
-  font-family: "Nova Mono", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0; }
 
 h1, h2 {
@@ -235,7 +235,7 @@ h2 {
       font-size: 1.3em; } }
 
 p {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.2em;
   line-height: 1.5em;
   margin: 0;
@@ -389,7 +389,7 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 100vh 0 0;
   overflow-x: hidden; }
 
@@ -494,7 +494,7 @@ header {
     background-color: #77C383; }
   .about_me h3 {
     color: black;
-    font-family: "Nova Mono", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding-top: 50px; }
   .about_me .social i {
     color: black;
@@ -528,6 +528,9 @@ header {
     margin: 0 auto;
     padding: 50px 0;
     width: 85%; }
+    @media (max-width: 567px) {
+      .technologies .items {
+        padding: 15px 0; } }
     .technologies .items .row {
       align-items: center;
       justify-content: center; }
@@ -535,16 +538,22 @@ header {
       color: white;
       font-size: 4em;
       margin: 40px; }
+      @media (max-width: 567px) {
+        .technologies .items i {
+          margin: 35px; } }
     .technologies .items img {
       margin: 31px;
       width: 80px; }
+      @media (max-width: 567px) {
+        .technologies .items img {
+          margin: 25px; } }
 
 .contact {
   background: #77C383; }
   .contact h2:after {
     background-color: #FFC63B; }
   .contact form {
-    font-family: "Roboto Mono", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 100px auto;
     max-width: 600px;
     padding: 0; }
@@ -555,7 +564,7 @@ header {
       border: 0; }
     .contact form input, .contact form textarea {
       border: 0;
-      font-family: "Roboto Mono", sans-serif;
+      font-family: "Lato", sans-serif;
       margin: 5px 0;
       outline-color: #FFC63B;
       padding: 10px;
