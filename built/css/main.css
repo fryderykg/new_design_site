@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nova+Mono|Montserrat|Lato:300,400");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Lato:300,400");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 .bg-red {
@@ -459,10 +459,11 @@ header {
     overflow: hidden;
     position: relative;
     width: 90%; }
-    .projects .image:hover img {
-      transform: scale(1.1); }
-    .projects .image:hover .overlay {
-      opacity: 1; }
+    @media (min-width: 769px) {
+      .projects .image:hover img {
+        transform: scale(1.1); }
+      .projects .image:hover .overlay {
+        opacity: 1; } }
     .projects .image img {
       transition: .5s transform ease;
       width: 100%; }
@@ -480,13 +481,14 @@ header {
       right: 7%;
       top: 10%;
       transition: .5s opacity ease; }
-    .projects .image i {
-      display: block;
-      font-size: 3em; }
-    .projects .image .fa {
-      position: absolute;
-      bottom: 25%;
-      left: 50%; }
+      @media (max-width: 768px) {
+        .projects .image .overlay {
+          bottom: 2px;
+          left: 0;
+          opacity: 1;
+          padding-top: 10px;
+          right: 0;
+          top: auto; } }
 
 .about_me {
   background: #F1F1F1; }
@@ -503,7 +505,7 @@ header {
     padding: 10px;
     transition: .3s color ease; }
     .about_me .social i:hover {
-      color: #FFC63B; }
+      color: #77C383; }
 
 .technologies {
   background: white;
@@ -528,7 +530,7 @@ header {
     margin: 0 auto;
     padding: 50px 0;
     width: 85%; }
-    @media (max-width: 567px) {
+    @media (max-width: 576px) {
       .technologies .items {
         padding: 15px 0; } }
     .technologies .items .row {
@@ -538,13 +540,13 @@ header {
       color: white;
       font-size: 4em;
       margin: 40px; }
-      @media (max-width: 567px) {
+      @media (max-width: 576px) {
         .technologies .items i {
           margin: 35px; } }
     .technologies .items img {
       margin: 31px;
       width: 80px; }
-      @media (max-width: 567px) {
+      @media (max-width: 576px) {
         .technologies .items img {
           margin: 25px; } }
 

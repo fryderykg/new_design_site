@@ -69,10 +69,11 @@ header
     overflow: hidden
     position: relative
     width: 90%
-    &:hover img
-      transform: scale(1.1)
-    &:hover .overlay
-      opacity: 1
+    @media (min-width: 769px)
+      &:hover img
+        transform: scale(1.1)
+      &:hover .overlay
+        opacity: 1
     img
       transition: .5s transform ease
       width: 100%
@@ -90,13 +91,13 @@ header
       right: 7%
       top: 10%
       transition: .5s opacity ease
-    i
-      display: block
-      font-size: 3em
-    .fa
-      position: absolute
-      bottom: 25%
-      left: 50%
+      @media (max-width: 768px)
+        bottom: 2px
+        left: 0
+        opacity: 1
+        padding-top: 10px
+        right: 0
+        top: auto
 
 // ABOUT ME SECTION
 .about_me
@@ -115,7 +116,7 @@ header
       padding: 10px
       transition: .3s color ease
       &:hover
-        color: $color-yellow
+        color: $color-green
 
 // TECHNOLOGIES SECTION
 .technologies
