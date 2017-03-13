@@ -1,5 +1,5 @@
 /**
- * Created by frycek on 06.02.17.
+ * WAYPOINTS CONFIG
  */
 $(document).ready(function() {
   // COLORS
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
   // WAYPOINTS
   var hamburgerWaypoint = new Waypoint({
-    element: document.getElementById('projects'),
+    element: $('#projects'),
     handler: function (direction) {
       if (direction === 'down') {
         hamburger.css('color', '#000')
@@ -25,7 +25,7 @@ $(document).ready(function() {
     offset: '50px'
   }),
     projectsWaypoint = new Waypoint({
-      element: document.getElementById('projects'),
+      element: $('#projects'),
       handler: function (direction) {
         if (direction === 'down') {
           siteWrapper.css('background', colorProjects);
@@ -36,7 +36,7 @@ $(document).ready(function() {
       offset: '50%'
     }),
     aboutMeWaypoint = new Waypoint({
-      element: document.getElementById('aboutMe'),
+      element: $('#aboutMe'),
       handler: function (direction) {
         if (direction === 'down') {
           siteWrapper.css('background', colorAboutMe);
@@ -47,7 +47,7 @@ $(document).ready(function() {
       offset: '50%'
     }),
     technologiesWaypoint = new Waypoint({
-      element: document.getElementById('technologies'),
+      element: $('#technologies'),
       handler: function (direction) {
         if (direction === 'down') {
           siteWrapper.css('background', colorTechnologies);
@@ -58,7 +58,7 @@ $(document).ready(function() {
       offset: '50%'
     }),
     contactMeWaypoint = new Waypoint({
-      element: document.getElementById('contact'),
+      element: $('#contact'),
       handler: function (direction) {
         if (direction === 'down') {
           siteWrapper.css('background', colorContactMe);
@@ -68,4 +68,37 @@ $(document).ready(function() {
       },
       offset: '50%'
     });
+
+  $('.project:nth-of-type(1)').waypoint(function() {
+    $('.project:nth-of-type(1)').addClass('fadeInLeft');
+  }, { offset: '70%' });
+
+ $('.project:nth-of-type(2)').waypoint(function() {
+    $('.project:nth-of-type(2)').addClass('fadeInRight');
+  }, { offset: '70%' });
+
+   $('.project:nth-of-type(3)').waypoint(function() {
+    $('.project:nth-of-type(3)').addClass('fadeInLeft');
+  }, { offset: '70%' });
+
+   $('.project:nth-of-type(4)').waypoint(function() {
+    $('.project:nth-of-type(4)').addClass('fadeInRight');
+  }, { offset: '70%' });
+
+  $('.project:nth-of-type(5)').waypoint(function() {
+    $('.project:nth-of-type(5)').addClass('fadeInLeft');
+  }, { offset: '70%' });
+
+ $('.project:nth-of-type(6)').waypoint(function() {
+    $('.project:nth-of-type(6)').addClass('fadeInRight');
+  }, { offset: '70%' });
+
+   $('.project:nth-of-type(7)').waypoint(function() {
+    $('.project:nth-of-type(7)').addClass('fadeInLeft');
+  }, { offset: '70%' });
+
+   $('.project:nth-of-type(8)').waypoint(function() {
+    $('.project:nth-of-type(8)').addClass('fadeInRight');
+  }, { offset: '70%' });
+
 });
